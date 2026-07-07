@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  justify-self: center;
+  text-align: center;
+  max-width: 97 vw;
+}
+
+main {
+  display: flex;
+}
+
+.allGuests {
+  margin-right: 0.25rem;
+}
+
+.selectedGuest {
+  background-color: beige;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.selectedGuest p:nth-of-type(even) {
+  background-color: lightgray;
+}
+
+.guestRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.guestRow:first-of-type {
+  font-weight: bold;
+  font-size: large;
+}
+
+.guestRow p:hover {
+  cursor: pointer;
+}
+
+.guestRow:nth-of-type(odd) {
+  background-color: lightgray;
+}
+
+.guestNames {
+  width: 150px;
+}
+
+.guestEmails {
+  width: 275px;
+}
+
+.guestPhones {
+  width: 150px;
+}
