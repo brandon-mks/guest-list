@@ -22,6 +22,12 @@ export function GuestProvider({ children }) {
           "https://fsa-crud-2aa9294fe819.herokuapp.com/api/COHORT_CODE/guests",
         );
         setGuestList(data.data);
+        /*Question:
+        Why wouldn't this work without using data key selector?
+        aka. why isn't the initial data declaration destructuring
+          the axios.get response?
+        in your demo you didn't need to do data.data.
+        */
         //console.log(data);
       } catch (error) {
         console.log(error);
